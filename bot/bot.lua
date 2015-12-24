@@ -1,33 +1,3 @@
-
-#ifdef HAVE_CONFIG_H
-#include "config.h"
-#endif
-
-#include <assert.h>
-#include <string.h>
-#include <strings.h>
-#include "tgl-structures.h"
-#include "mtproto-common.h"
-//#include "telegram.h"
-#include "tree.h"
-#include <openssl/aes.h>
-#include <openssl/bn.h>
-#include <openssl/sha.h>
-#include "queries.h"
-#include "tgl-binlog.h"
-#include "tgl-methods-in.h"
-#include "updates.h"
-#include "mtproto-client.h"
-
-#include "tgl.h"
-#include "auto.h"
-#include "auto/auto-types.h"
-#include "auto/auto-skip.h"
-#include "auto/auto-fetch-ds.h"
-#include "auto/auto-free-ds.h"
-
-#define sha1 SHA1
-
 struct random2local {
   long long random_id;
   int local_id;
